@@ -1,0 +1,19 @@
+.AddNotesContainer {
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    border: 2px solid blue;
+    border-radius:25px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 15px;
+    right: 15px; 
+    cursor: pointer;
+}
+
+.ButtonText {
+ font-size: 20px;
+ color: blue;
+}
