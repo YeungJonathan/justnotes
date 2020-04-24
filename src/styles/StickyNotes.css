@@ -1,0 +1,30 @@
+.NotesContainer {
+    height: 400px; 
+    width: 250px;
+    background-color: lightblue;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.title {
+    border: none;
+    background-color: lightblue;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.description{ 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"]{
+    font-size:20px;
+}
