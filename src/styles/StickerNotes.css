@@ -1,0 +1,24 @@
+.NotesContainer {
+    height: 400px; 
+    width: 250px;
+    background-color: lightblue;
+}
+
+.title {
+    font-size:20px;
+}
+
+.description {
+    font-size: 14px;
+    height: 80%;
+}
+
+.input-field{
+    border: none;
+    background-color: lightblue;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10px;
+}

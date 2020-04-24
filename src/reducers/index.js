@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 // import todos from './todos'
-import StickyNotes from './StickyNotes';
+import StickerNotes from './StickerNotes';
 
 export default combineReducers({
-    StickyNotes
+    StickerNotes
 })
