@@ -18,3 +18,12 @@ export const updateDescription = (id, description) => ({
         description
     }
 })
+
+export const updateStickerNoteLocation = (id, x, y) => ({
+    type: 'UPDATE_LOCATION',
+    payload: {
+        id,
+        x,
+        y
+    }
+})

@@ -2,6 +2,8 @@
     height: 400px; 
     width: 250px;
     background-color: lightblue;
+    display:'flex';
+    position: relative;
 }
 
 .title {
