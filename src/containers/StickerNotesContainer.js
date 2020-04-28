@@ -1,7 +1,7 @@
 
 import StickerNotes from '../components/StickerNotes';
 import { connect } from 'react-redux';
-import { updateTitle, updateDescription, updateStickerNoteLocation } from '../actions/StickerNotes';
+import { updateTitle, updateDescription, updateStickerNoteLocation, deleteStickyNote } from '../actions/StickerNotes';
 
 const getDisplayNotes = (notesList) => {
     return notesList
@@ -16,7 +16,8 @@ const mapStateToProps = (state, ownProp) => ({
 const mapDispatchToProps = dispatch => ({
   titleChange: (id, text) => dispatch(updateTitle(id, text)),
   descriptionChange: (id, text) => dispatch(updateDescription(id, text)),
-  updateLocation: (id, x, y) => dispatch(updateStickerNoteLocation(id, x, y))
+  updateLocation: (id, x, y) => dispatch(updateStickerNoteLocation(id, x, y)),
+  deleteNote: (id) => dispatch(deleteStickyNote(id)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(StickerNotes)

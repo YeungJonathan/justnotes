@@ -1,9 +1,8 @@
 .NotesContainer {
     height: 400px; 
     width: 250px;
-    background-color: lightblue;
-    display:'flex';
-    position: relative;
+    background-color: #302f2f;
+    position: absolute;
 }
 
 .title {
@@ -17,10 +16,30 @@
 
 .input-field{
     border: none;
-    background-color: lightblue;
+    background-color: #302f2f;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     margin-top: 10px;
+    color: white;
+}
+
+.top-tab{
+    background-color: white;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+.cross{
+    height:9px;
+    width: 9px;
+    background-color:red;
+    border: red solid;
+    border-width: 1px;
+    border-radius: 50px;
+    cursor: pointer;
 }

@@ -7,12 +7,13 @@ const defaultStore = {
 export default function StickerNotes(state = defaultStore, action) {
     switch (action.type) {
 		case 'ADD_NOTES':
+			const offSet = state.id * 5;
 			const newNote = {
 				id: state.id,
 				title: 'Untitled',
 				description: 'Enter here ...',
-				left: 150,
-				top: 150,
+				left: 150 + offSet,
+				top: 150 + offSet,
 			}
 			return {
 				id: state.id + 1,
@@ -63,6 +64,13 @@ export default function StickerNotes(state = defaultStore, action) {
 					return note
 				})
 			})
+		case 'DELETE_NOTE':
+			const filteredNotes = state.notesList.filter(note => note.id !== action.payload.id);
+			console.log(filteredNotes)
+			return {
+				id: state.id,				
+				notesList: filteredNotes
+			}
 		default:
 			return state
     }

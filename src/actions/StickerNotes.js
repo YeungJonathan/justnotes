@@ -27,3 +27,10 @@ export const updateStickerNoteLocation = (id, x, y) => ({
         y
     }
 })
+
+export const deleteStickyNote = (id) => ({
+    type: 'DELETE_NOTE',
+    payload: {
+        id
+    }
+})

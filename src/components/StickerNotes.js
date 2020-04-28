@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/StickerNotes.css';
 import StickerNoteItem from './StickerNoteItem';
 
-const StickerNotes = ({x, y, notesList, titleChange, descriptionChange, updateLocation}) => {
+const StickerNotes = ({x, y, notesList, titleChange, descriptionChange, updateLocation, deleteNote}) => {
   return (
     <>
         {notesList.map(note => (
@@ -12,6 +12,7 @@ const StickerNotes = ({x, y, notesList, titleChange, descriptionChange, updateLo
             titleChange={titleChange} 
             descriptionChange={descriptionChange}
             updateLocation={updateLocation}
+            deleteNote={deleteNote}
             x={x}
             y={y}
           />

@@ -28,7 +28,7 @@ class StickerNoteItem extends React.Component{
 	}
 
     render(){
-		const {note, descriptionChange, titleChange, x, y} = this.props;
+		const {note, descriptionChange, titleChange, x, y, deleteNote} = this.props;
 		const { dragging, xOffset, yOffset } = this.state;
 		const nonDraggingStyle = {left:note.left, top:note.top};
 		const draggingStyle = {left: x - xOffset, top: y - yOffset};
@@ -40,10 +40,15 @@ class StickerNoteItem extends React.Component{
 				style={dragging?draggingStyle:nonDraggingStyle}
 			>
 				<div
-					style={{backgroundColor:'yellow', height:"15px"}}
+					className="top-tab"
 					onMouseDown = {() => this.mouseDown()}
 					onMouseUp = {() => this.mouseUp()}
-				/>
+				>
+					<div 
+						className="cross"
+						onMouseDown={() => deleteNote(note.id)}
+						/>
+				</div>
                 <input 
                     type="text" 
                     className="title input-field" 
