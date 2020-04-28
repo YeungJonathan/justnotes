@@ -66,7 +66,6 @@ export default function StickerNotes(state = defaultStore, action) {
 			})
 		case 'DELETE_NOTE':
 			const filteredNotes = state.notesList.filter(note => note.id !== action.payload.id);
-			console.log(filteredNotes)
 			return {
 				id: state.id,				
 				notesList: filteredNotes
