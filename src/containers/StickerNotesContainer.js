@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { updateTitle, updateDescription } from '../actions/StickerNotes';
 
 const getDisplayNotes = (notesList) => {
-    console.log(notesList)
     return notesList
 }
 
