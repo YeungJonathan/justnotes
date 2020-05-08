@@ -5,7 +5,6 @@ import '../styles/StickerNotes.css';
 class StickerNoteItem extends React.Component{
     constructor(props){
 		super(props);
-		this.divRef = React.createRef();
 		this.state = {
 			dragging: false,
 			xOffset: 0,
@@ -35,7 +34,6 @@ class StickerNoteItem extends React.Component{
         return(
 			<div 
 				key={note.id} 
-				ref={this.divRef} 
 				className="NotesContainer"
 				style={dragging?draggingStyle:nonDraggingStyle}
 			>
